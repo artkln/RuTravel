@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h3k-bK-TNO">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="PlN-iW-H7B">
+            <objects>
+                <viewController id="h3k-bK-TNO" customClass="AuthViewController" customModule="RuTravel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cA6-JB-jfU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5H-sK-T8H">
+                                <rect key="frame" x="20" y="75" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4L8-m4-gwo">
+                                <rect key="frame" x="20" y="125.5" width="335" height="152"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R4J-aO-1fV">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="h3k-bK-TNO" id="jy0-PQ-kY7"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRE-qm-WoN">
+                                        <rect key="frame" x="0.0" y="59" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="h3k-bK-TNO" id="Tee-zA-pzs"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dKa-oU-Ifr">
+                                        <rect key="frame" x="0.0" y="118" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="h3k-bK-TNO" id="fDM-2J-9XD"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzj-RY-O2B" customClass="RuTravelButton" customModule="RuTravel" customModuleProvider="target">
+                                <rect key="frame" x="70" y="368.5" width="235" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HLB-1D-Ekm">
+                                <rect key="frame" x="118.5" y="307.5" width="138.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dD-kb-sdu">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-xl-P7W" customClass="RuTravelButton" customModule="RuTravel" customModuleProvider="target">
+                                        <rect key="frame" x="71.5" y="0.0" width="67" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YWU-9O-L7t"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="4L8-m4-gwo" secondAttribute="trailing" constant="20" id="G2e-Qo-Lli"/>
+                            <constraint firstItem="HLB-1D-Ekm" firstAttribute="centerX" secondItem="cA6-JB-jfU" secondAttribute="centerX" id="Gqp-pF-bf0"/>
+                            <constraint firstItem="vzj-RY-O2B" firstAttribute="top" secondItem="HLB-1D-Ekm" secondAttribute="bottom" constant="30" id="N5c-Nj-qLJ"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="b5H-sK-T8H" secondAttribute="trailing" constant="20" id="OfQ-JO-uHJ"/>
+                            <constraint firstItem="HLB-1D-Ekm" firstAttribute="top" secondItem="4L8-m4-gwo" secondAttribute="bottom" constant="30" id="Qzd-Ih-rVs"/>
+                            <constraint firstItem="b5H-sK-T8H" firstAttribute="top" secondItem="YWU-9O-L7t" secondAttribute="top" constant="75" id="k1T-WA-FPZ"/>
+                            <constraint firstItem="4L8-m4-gwo" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="20" id="kqJ-cK-NMX"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="vzj-RY-O2B" secondAttribute="trailing" constant="70" id="lC7-EK-KdQ"/>
+                            <constraint firstItem="4L8-m4-gwo" firstAttribute="top" secondItem="b5H-sK-T8H" secondAttribute="bottom" constant="30" id="qbE-GM-uH5"/>
+                            <constraint firstItem="vzj-RY-O2B" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="70" id="tNx-yU-aw4"/>
+                            <constraint firstItem="b5H-sK-T8H" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="20" id="tzr-9u-1Po"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alreadyRegisteredLabel" destination="1dD-kb-sdu" id="jmg-76-qcJ"/>
+                        <outlet property="emailField" destination="zRE-qm-WoN" id="xSg-2w-IYP"/>
+                        <outlet property="lowerButton" destination="vzj-RY-O2B" id="ycp-vr-ZOi"/>
+                        <outlet property="nameField" destination="R4J-aO-1fV" id="b4N-qz-unP"/>
+                        <outlet property="passwordField" destination="dKa-oU-Ifr" id="Hul-aC-xeM"/>
+                        <outlet property="titleLabel" destination="b5H-sK-T8H" id="cOq-NG-6AO"/>
+                        <outlet property="upperButton" destination="UKv-xl-P7W" id="OlG-Zg-dsf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psv-Wb-mBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="-231"/>
+        </scene>
+    </scenes>
+</document>

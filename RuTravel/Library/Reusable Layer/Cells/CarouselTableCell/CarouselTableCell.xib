@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CarouselTableCell" customModule="RuTravel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="584" height="396"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Uyp-Ap-hW7">
+                    <rect key="frame" x="0.0" y="10" width="584" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="bTp-mc-9ci"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oUw-SO-Gjq">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="xkj-nU-BeM"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="e20-1d-lOg"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="uxv-tg-FNn">
+                    <rect key="frame" x="234" y="215" width="116" height="137"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uxv-tg-FNn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3lI-w9-c3K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uxv-tg-FNn" secondAttribute="bottom" constant="10" id="7I0-MR-laB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Uyp-Ap-hW7" secondAttribute="trailing" id="FvY-72-v2u"/>
+                <constraint firstItem="Uyp-Ap-hW7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UBD-UR-FEc"/>
+                <constraint firstItem="uxv-tg-FNn" firstAttribute="top" secondItem="Uyp-Ap-hW7" secondAttribute="bottom" constant="5" id="khG-cr-wmp"/>
+                <constraint firstItem="Uyp-Ap-hW7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="xko-Fn-vFt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carouselCollectionView" destination="Uyp-Ap-hW7" id="GuW-74-kP8"/>
+                <outlet property="pageControl" destination="uxv-tg-FNn" id="EGR-5o-JwL"/>
+            </connections>
+            <point key="canvasLocation" x="260.86956521739131" y="197.54464285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

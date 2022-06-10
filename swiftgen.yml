@@ -1,0 +1,20 @@
+xcassets:
+  inputs:
+    - RuTravel/Resources/Images/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: RuTravel/Resources/Images/Assets.swift
+
+fonts:
+  inputs:
+    - RuTravel/Resources/Fonts/
+  outputs:
+    - templateName: swift4
+      output: RuTravel/Resources/Fonts/Fonts.swift
+
+colors:
+  inputs:
+    - RuTravel/Resources/Colors/Colors.txt
+  outputs:
+    - templateName: swift4
+      output: RuTravel/Resources/Colors/Colors.swift

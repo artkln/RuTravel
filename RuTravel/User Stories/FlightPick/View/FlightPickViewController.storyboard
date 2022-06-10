@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h3k-bK-TNO">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flight Pick View Controller-->
+        <scene sceneID="PlN-iW-H7B">
+            <objects>
+                <viewController id="h3k-bK-TNO" customClass="FlightPickViewController" customModule="RuTravel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cA6-JB-jfU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEq-qD-bBK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7B-0M-M2E">
+                                        <rect key="frame" x="20" y="150" width="335" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="b7B-0M-M2E" firstAttribute="leading" secondItem="jEq-qD-bBK" secondAttribute="leading" constant="20" id="Rhg-3j-qR0"/>
+                                    <constraint firstItem="b7B-0M-M2E" firstAttribute="top" secondItem="jEq-qD-bBK" secondAttribute="top" constant="150" id="WPB-Sm-eKA"/>
+                                    <constraint firstAttribute="trailing" secondItem="b7B-0M-M2E" secondAttribute="trailing" constant="20" id="kRW-12-9yZ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gmu-r9-Sss">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h3k-bK-TNO" id="hik-03-deq"/>
+                                    <outlet property="delegate" destination="h3k-bK-TNO" id="rdU-cD-hdA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YWU-9O-L7t"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gmu-r9-Sss" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" id="0Vw-fL-cm0"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="jEq-qD-bBK" secondAttribute="trailing" id="1xt-NI-UDR"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="bottom" secondItem="jEq-qD-bBK" secondAttribute="bottom" id="b6P-0X-46O"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="bottom" secondItem="gmu-r9-Sss" secondAttribute="bottom" id="dpQ-Bc-tIJ"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="gmu-r9-Sss" secondAttribute="trailing" id="pCi-LB-Gu0"/>
+                            <constraint firstItem="jEq-qD-bBK" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" id="qks-CO-75y"/>
+                            <constraint firstItem="jEq-qD-bBK" firstAttribute="top" secondItem="YWU-9O-L7t" secondAttribute="top" id="rv6-hR-Xpa"/>
+                            <constraint firstItem="gmu-r9-Sss" firstAttribute="top" secondItem="YWU-9O-L7t" secondAttribute="top" id="sGj-Yo-73f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blockerLabel" destination="b7B-0M-M2E" id="AG9-kh-D1A"/>
+                        <outlet property="blockerView" destination="jEq-qD-bBK" id="4Hv-rB-Q95"/>
+                        <outlet property="tableView" destination="gmu-r9-Sss" id="2g4-6z-r56"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psv-Wb-mBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="-231"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

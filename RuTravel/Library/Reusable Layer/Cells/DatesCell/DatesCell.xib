@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="183" id="KGk-i7-Jjw" customClass="DatesCell" customModule="RuTravel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="503" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="503" height="183"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fyk-3u-wTP">
+                        <rect key="frame" x="20" y="10" width="463" height="52"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRj-Vd-w1M">
+                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="OC1-t3-Bub">
+                                <rect key="frame" x="51.5" y="0.0" width="411.5" height="52"/>
+                            </datePicker>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RdB-t2-3Ia">
+                        <rect key="frame" x="20" y="72" width="463" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ev-82-3bS">
+                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="50"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Hhw-uJ-e7Z">
+                                <rect key="frame" x="51.5" y="0.0" width="411.5" height="50"/>
+                            </datePicker>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIB-m4-X7v" customClass="RuTravelButton" customModule="RuTravel" customModuleProvider="target">
+                        <rect key="frame" x="50" y="142" width="403" height="31"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IIB-m4-X7v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="81h-30-VKi"/>
+                    <constraint firstItem="IIB-m4-X7v" firstAttribute="top" secondItem="RdB-t2-3Ia" secondAttribute="bottom" constant="20" id="Lk2-eS-RHG"/>
+                    <constraint firstItem="fyk-3u-wTP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aJy-Ph-Ddt"/>
+                    <constraint firstAttribute="bottom" secondItem="IIB-m4-X7v" secondAttribute="bottom" constant="10" id="bdg-ag-CdK"/>
+                    <constraint firstItem="RdB-t2-3Ia" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cgn-ah-6kC"/>
+                    <constraint firstItem="RdB-t2-3Ia" firstAttribute="top" secondItem="fyk-3u-wTP" secondAttribute="bottom" constant="10" id="efR-hi-Go9"/>
+                    <constraint firstAttribute="trailing" secondItem="IIB-m4-X7v" secondAttribute="trailing" constant="50" id="hLD-2o-ML3"/>
+                    <constraint firstAttribute="trailing" secondItem="fyk-3u-wTP" secondAttribute="trailing" constant="20" id="kdt-Fx-5SN"/>
+                    <constraint firstAttribute="trailing" secondItem="RdB-t2-3Ia" secondAttribute="trailing" constant="20" id="sLI-5d-wKB"/>
+                    <constraint firstItem="fyk-3u-wTP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zNk-A3-WwN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="confirmButton" destination="IIB-m4-X7v" id="BPc-hF-YUh"/>
+                <outlet property="endDateLabel" destination="4ev-82-3bS" id="Zlz-TV-pyB"/>
+                <outlet property="endDatePicker" destination="Hhw-uJ-e7Z" id="4iF-8z-EoC"/>
+                <outlet property="startDateLabel" destination="NRj-Vd-w1M" id="ibB-aL-Jsl"/>
+                <outlet property="startDatePicker" destination="OC1-t3-Bub" id="HiR-pr-Lzx"/>
+            </connections>
+            <point key="canvasLocation" x="126.81159420289856" y="157.70089285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
